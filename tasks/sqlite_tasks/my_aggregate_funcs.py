@@ -13,3 +13,18 @@ class Average:
     def finalize(self):
         """Finalize the aggr"""
         return int(self.average / self.count)
+
+
+class FieldConcatenation:
+    """Concatenate multiple fields"""
+    def __init__(self):
+        """Initialize the aggr function"""
+        self.fields = ""
+
+    def step(self, value):
+        """Add a value to the container"""
+        self.fields += str(value)
+
+    def finalize(self):
+        """Finalize the aggr"""
+        return self.fields
