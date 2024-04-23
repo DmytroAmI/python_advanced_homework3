@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<data>
+    <user pk='1'>
+        <first_name>Marie</first_name>
+        <last_name>Smith</last_name>
+        <age>18</age>
+        <mail>ms@gmail.com</mail>
+    </user>
+    <user pk='2'>
+        <first_name>Alex</first_name>
+        <last_name>Kane</last_name>
+        <age>22</age>
+        <mail>ak@gmail.com</mail>
+    </user>
+    <user pk='3'>
+        <first_name>Max</first_name>
+        <last_name>Mads</last_name>
+        <age>32</age>
+        <mail>mm@gmail.com</mail>
+    </user>
+</data>
