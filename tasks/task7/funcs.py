@@ -6,7 +6,7 @@ from xml.dom.minidom import parseString
 
 def create_or_overwrite_csv(filename):
     """Create or overwrite a csv file, data entered by the user."""
-    with open(filename, 'w') as csvfile:
+    with open(filename, 'w', newline='') as csvfile:
         writer = csv.DictWriter(
             csvfile,
             fieldnames=['first_name', 'last_name', 'birth_date', 'city'],
@@ -18,7 +18,7 @@ def create_or_overwrite_csv(filename):
 
 def update_csv(filename):
     """Update a csv file data"""
-    with open(filename, 'a') as csvfile:
+    with open(filename, 'a', newline='') as csvfile:
         writer = csv.DictWriter(
             csvfile,
             fieldnames=['first_name', 'last_name', 'birth_date', 'city'],
